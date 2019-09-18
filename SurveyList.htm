@@ -12,20 +12,33 @@ DOCTYPE HTML>
   Answer: 
 <input type="text" name="UserName" size=35 maxlength=30 value="">
 <input type="submit">
-   <fieldset>
-    <legend>Survey</legend>
-    <div>
-      <label for="msg"></label>
-      <p> Who do you believe is the Strongest Atomic Chess Player?</p>
-      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
-    <div>
-      <label for="msg">Who do you believe is the Strongest Atomic Chess Player over 2000+ but under 2100?</label><br>
-      <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
-  </fieldset>
-
-  <div id="submitbutton">
-    <button type="submit" id="submit">Send your application</button>   </div>
-
+   <form method="post" novalidate>  
+        <label id="formgroup">
+            <p id="text1">
+            Name&#x2a;
+            </p>
+            <input id="textinput" type="text" value=" Your Name"></input>
+        </label>
+        <label id="formgroup1">
+            <p id="text2">
+            Company Name
+            </p>
+            <input id="textinput1" type="text" value=" Company Name"></input>
+        </label>
+        <label id="formgroup2">
+            <p id="text3">
+            Email&#x2a;
+            </p>
+            <input id="textinput2" type="text" value=" email"></input>
+        </label>
+        <label id="formgroup3">
+            <p id="text4">
+            Message&#x2a;
+            </p>
+            <input id="textinput3" type="text" value=" Your message"></input>
+        </label>
+        <input id="submit" type="submit" value="Send Message"></input>
+        <input type="hidden" name="recipient" value="nf3opening@gmail.com"> </form>
 </form>
   </div>
 </form>
