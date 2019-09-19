@@ -12,7 +12,22 @@ DOCTYPE HTML>
   Answer: 
 <input type="text" name="UserName" size=35 maxlength=30 value="">
    <form 
- 
+ <form 
+  action="mailto:dummy1@chamisplace.com"
+  method="POST"
+  enctype="multipart/form-data"
+  name="EmailTestForm">
+
+Your Name:<br>
+<input type="text" size="20" name="VisitorName"><br><br>
+
+Your Comment:<br>
+<textarea name="VisitorComment" rows="4" cols="20">
+</textarea><br><br>
+
+<input type="submit" value="Email This Form">
+
+</form>
 </form>
   </div>
 </form>
