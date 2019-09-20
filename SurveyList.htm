@@ -11,16 +11,26 @@
   Answer: 
 <input type="text" name="UserName" size=35 maxlength=30 value="">
    <form 
-
-   <a name="form1866942140" id="formAnchor1866942140"></a>
-<script src="https://fs19.formsite.com/include/form/embedManager.js?1866942140"></script>
-<script>
-EmbedManager.embed({
-	key: "https://fs19.formsite.com/res/showFormEmbed?EParam=B6fiTn-RcO5GN84_Qbn-iGrYe2Y6sJfY&1866942140",
-	width: "100%",
-	mobileResponsive: true
-});
-</script>
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 
 </form>
 </form>
